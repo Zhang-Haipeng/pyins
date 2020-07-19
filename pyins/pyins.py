@@ -9,7 +9,23 @@ import numpy as np
 
 def land_split(pic_name, color='b'):
     """
-    docstring to be added.
+    Split one landscape pic into two continuous portrait pics.
+
+    Parameters
+    ----------
+    pic_name : str
+      Name of the pic file, e.g. "pic_1.jpg"
+    color : str
+      Color used to fill the empty sidebars. ['b', 'w'], 'b'-black, 'w'-white
+
+    Returns
+    -------
+    None. Processed pics will be saved into 'output' folder.
+
+    Examples
+    --------
+    >>> from pyins import pyins
+    >>> pyins.land_split('pic_1.jpg', color='b')
     """
     root_path = os.getcwd()
     print("Splitting: {}".format(pic_name))
@@ -58,7 +74,20 @@ def land_split(pic_name, color='b'):
 
 def split_black_all():
     """
-    docstring to be added.
+    Do land_split to all the pics in current folder and fill with black.
+
+    Parameters
+    ----------
+    None
+
+    Returns
+    -------
+    None. Processed pics will be saved into 'output' folder.
+
+    Examples
+    --------
+    >>> from pyins import pyins
+    >>> pyins.split_black_all()
     """
     pic_list = [x for x in os.listdir() if x[-4:] in [".jpg" or ".JPG"]]
     for pic_name in pic_list:
@@ -67,7 +96,20 @@ def split_black_all():
 
 def split_white_all():
     """
-    docstring to be added.
+    Do land_split to all the pics in current folder and fill with white.
+
+    Parameters
+    ----------
+    None
+
+    Returns
+    -------
+    None. Processed pics will be saved into 'output' folder.
+
+    Examples
+    --------
+    >>> from pyins import pyins
+    >>> pyins.split_white_all()
     """
     pic_list = [x for x in os.listdir() if x[-4:] in [".jpg" or ".JPG"]]
     for pic_name in pic_list:
