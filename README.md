@@ -15,11 +15,20 @@ pip install -i https://test.pypi.org/simple/ pyins
 
 ### Dependencies
 
-- TODO
+python = "^3.7"  
+matplotlib = "^3.3.0"  
+numpy = "^1.19.0"  
 
 ### Usage
 
-- TODO
+```
+from pyins import pyins
+pyins.split_black_all()
+# all pics ending with `.jpg`/`.JPG` will be black-split into two and saved into the `/output` folder. 
+
+pyins.land_split("my_pic.jpg", color='w')
+# `my_pic.jpg` will be white-split and saved to `/output` folder. 
+```
 
 ### Documentation
 The official documentation is hosted on Read the Docs: <https://pyins_rz.readthedocs.io/en/latest/>
