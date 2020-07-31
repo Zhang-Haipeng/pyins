@@ -2,7 +2,7 @@
 
 ![](https://github.com/Zhang-Haipeng/pyins/workflows/build/badge.svg) [![codecov](https://codecov.io/gh/Zhang-Haipeng/pyins/branch/main/graph/badge.svg)](https://codecov.io/gh/Zhang-Haipeng/pyins) ![Release](https://github.com/Zhang-Haipeng/pyins/workflows/Release/badge.svg) [![Documentation Status](https://readthedocs.org/projects/pyins/badge/?version=latest)](https://pyins_rz.readthedocs.io/en/latest/?badge=latest)
 
-Python package that helps process pics for Instagram posts.
+Python package that helps process pictures for Instagram posts.
 
 ### Installation:
 
